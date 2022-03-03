@@ -1,0 +1,245 @@
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+margin: 0;
+font-family: "Source Code Pro";
+overflow: hidden;
+background-color: #373737;
+font-size: 40px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Train One';
+  font-weight: lighter;
+  font-size: 10vw;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 6vw;
+}
+
+/*Page 1*/
+
+#Me {
+  padding: 10%;
+}
+
+.backImage {
+  position:relative;
+  padding:15px;
+}
+
+.background-color {
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 0;
+  background-color: #71A9F7;
+  border-radius: 20px;
+}
+
+#Me p {
+  position:relative;
+  z-index:0;
+  color:#fff;
+  text-align: center;
+}
+
+#Me p strong {
+  color: #373737;
+}
+
+.letterHover {
+  font-size: 10vw;
+}
+
+.letterHover:first-child{
+  font-size: 15vw;
+}
+
+.letterHover:hover {
+  font-size: 15vw;
+  color: #20FC8F;
+}
+
+/*Page 2*/
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 5%;
+  margin-top: -5%;
+}
+
+#page-2 .container a:not(.close) {
+  width: 30%;
+  height: 20%;
+  margin-right: 1%;
+  margin-bottom: 0.3%;
+}
+
+#page-2 .container a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#page-2 .container a img:hover {
+  cursor: pointer;
+}
+
+.letterHoverYZ {
+  font-size: 7vw;
+}
+
+.letterHoverYZ:first-child{
+  font-size: 10vw;
+}
+
+.letterHoverYZ:hover {
+  font-size: 10vw;
+  color: #20FC8F;
+}
+
+/*Pop up*/
+.langage {
+  color: #00A6FB;
+}
+
+.buttonPop {
+  color: #fff;
+  border-radius: 20px/50px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h3 {
+  margin-top: 0;
+  font-size: 60px;
+  color: #20FC8F;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #20FC8F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.button {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+}
+
+.button.effectButton {
+  color: #333;
+}
+
+.button.effectButton.effectButton::after, .button.effectButton.effectButton::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.button.effectButton.effectButton::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #20FC8F;
+  border-right-color: #20FC8F;
+}
+
+.button.effectButton.effectButton::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #20FC8F;
+  border-left-color: #20FC8F;
+}
+
+.button.effectButton.effectButton:hover:after, .button.effectButton.effectButton:hover:before {
+  border-bottom-color: #20FC8F;
+  border-right-color: #20FC8F;
+  border-top-color: #20FC8F;
+  border-left-color: #20FC8F;
+  width: 100%;
+  height: 100%;
+}
+
+/*Page 3*/
+#page-3 {
+  text-align: center;
+}
